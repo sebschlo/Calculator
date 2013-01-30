@@ -36,5 +36,8 @@ separates each parenthesis into a string of its own that gets computed and then
 placed back on the original one so that the same methods described above can
 solve the entire thing. 
 
-
+To ensure that the string is valid, intelligence needs to be added to the 
+ViewController. This means that the user won't be able to place two operators
+next to each other and other things that don't make sense, such as just placing
+a decimal point for an operand, etc. 
 
