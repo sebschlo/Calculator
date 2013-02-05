@@ -23,6 +23,7 @@
 		9EBDB9D716A86A0D0036CF1B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EBDB9B216A86A0D0036CF1B /* Foundation.framework */; };
 		9EBDB9DF16A86A0D0036CF1B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9EBDB9DD16A86A0D0036CF1B /* InfoPlist.strings */; };
 		9EBDB9E216A86A0D0036CF1B /* CalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EBDB9E116A86A0D0036CF1B /* CalculatorTests.m */; };
+		9EC4DAF016C07C450084572C /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EC4DAEF16C07C450084572C /* background.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		9EBDB9DE16A86A0D0036CF1B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9EBDB9E016A86A0D0036CF1B /* CalculatorTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculatorTests.h; sourceTree = "<group>"; };
 		9EBDB9E116A86A0D0036CF1B /* CalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorTests.m; sourceTree = "<group>"; };
+		9EC4DAEF16C07C450084572C /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		9EBDB9A116A86A0D0036CF1B = {
 			isa = PBXGroup;
 			children = (
+				9EC4DAEF16C07C450084572C /* background.png */,
 				9EBDB9B616A86A0D0036CF1B /* Calculator */,
 				9EBDB9DA16A86A0D0036CF1B /* CalculatorTests */,
 				9EBDB9AF16A86A0D0036CF1B /* Frameworks */,
@@ -237,6 +240,7 @@
 				9EBDB9C516A86A0D0036CF1B /* Default@2x.png in Resources */,
 				9EBDB9C716A86A0D0036CF1B /* Default-568h@2x.png in Resources */,
 				9EBDB9CA16A86A0D0036CF1B /* MainStoryboard.storyboard in Resources */,
+				9EC4DAF016C07C450084572C /* background.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +452,7 @@
 				9EBDB9E716A86A0D0036CF1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9EBDB9E816A86A0D0036CF1B /* Build configuration list for PBXNativeTarget "CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +461,7 @@
 				9EBDB9EA16A86A0D0036CF1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
