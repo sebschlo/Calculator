@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface SEBCalculatorModel : NSObject
--(NSString *)compute:(NSString *)calcScreen;
+-(NSString *)parse:(NSString *)calcScreen;
 @end
 

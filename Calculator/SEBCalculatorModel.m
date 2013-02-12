@@ -11,6 +11,19 @@
 @implementation SEBCalculatorModel
 
 
+
+-(NSString *)parse:(NSString *)calcScreen
+{
+    NSString *finalResult;
+
+    finalResult = [calcScreen stringByReplacingOccurrencesOfString:@"π" withString:@"3.14159265"];
+    finalResult = [finalResult stringByReplacingOccurrencesOfString:@"e" withString:@"2.718281828"];
+
+    finalResult = [self compute:finalResult];
+
+    return finalResult;
+}
+
 -(NSString *)compute:(NSString *)calcScreen
 {
     // Initialize data structures and necessary objects
@@ -23,7 +36,7 @@
     for (int i = 0; i<[calcScreen length]; i++)
     {
         NSString *current = [calcScreen substringWithRange:NSMakeRange(i,1)];
-        if (([f numberFromString:current] == Nil && ![current isEqualToString:@"."] && ![current isEqualToString:@"-"]) || ([current isEqualToString:@"-"] && i != 0))
+        if (([f numberFromString:current] == Nil && ![current isEqualToString:@"."] && ![current isEqualToString:@"-"]) || ([current isEqualToString:@"-"] && i != 0 && [f numberFromString:[calcScreen substringWithRange:NSMakeRange(i-1,1)]]))
         {
             [operands addObject:[f numberFromString:[calcScreen substringWithRange:NSMakeRange(beginning, i-beginning)]]];
             [operators addObject:current];
@@ -35,6 +48,11 @@
     }
 
     double result = 0;
+
+    // Exit if there is nothing to compute
+    if ([operators count] == 0) {
+        return calcScreen;
+    }
 
     Boolean containsExponents = YES;
     while (containsExponents)
@@ -67,8 +85,12 @@
             }
             else if ([[operators objectAtIndex:j] isEqualToString:@"/"])
             {
-                result = [[operands objectAtIndex:j] doubleValue] / [[operands objectAtIndex:j+1] doubleValue];
-                containsMulDiv = YES;
+                if ([[operands objectAtIndex:j+1] doubleValue] != 0) {
+                    result = [[operands objectAtIndex:j] doubleValue] / [[operands objectAtIndex:j+1] doubleValue];
+                    containsMulDiv = YES;
+                } else {
+                    return @"Error";
+                }
             }
 
             if (containsMulDiv) {
@@ -107,10 +129,11 @@
 
         }
     }
+
+    [f setFormatterBehavior:NSNumberFormatterDecimalStyle];
+
     return [NSString stringWithFormat:@"%g", result];
 }
-
-
 
 
 @end

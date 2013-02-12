@@ -15,12 +15,6 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="background.png" id="OFA-Yi-qsh">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="3:45 PM" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jND-bS-tGG" userLabel="TimeLabel">
-                                <rect key="frame" x="201" y="26" width="80" height="21"/>
-                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="16"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ujN-qj-y94" userLabel="OptionLabel">
                                 <rect key="frame" x="39" y="26" width="66" height="21"/>
                                 <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="15"/>
@@ -372,7 +366,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="appendOperator:" destination="2" eventType="touchUpInside" id="sCm-e7-5wT"/>
+                                    <action selector="appendOperator:" destination="2" eventType="touchUpInside" id="8a4-5U-PPW"/>
                                     <action selector="clickDown:" destination="2" eventType="touchDown" id="DII-41-QP1"/>
                                     <action selector="clickUp:" destination="2" eventType="touchUpInside" id="PyJ-MW-miy"/>
                                     <action selector="clickUp:" destination="2" eventType="touchUpOutside" id="e5j-Ne-D2N"/>
@@ -401,10 +395,10 @@
                                     <action selector="clickUp:" destination="2" eventType="touchUpInside" id="tAg-ta-JPY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="oaS-ir-AIz" userLabel="(">
+                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="oaS-ir-AIz" userLabel="X">
                                 <rect key="frame" x="104" y="215" width="47" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" size="button"/>
-                                <state key="normal" title="(">
+                                <state key="normal" title="X">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="0.0" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -424,7 +418,7 @@
                                     <action selector="clickUp:" destination="2" eventType="touchUpOutside" id="aEN-XP-zJP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="IXs-Zh-lDL" userLabel=")">
+                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="IXs-Zh-lDL" userLabel="STR">
                                 <rect key="frame" x="173" y="215" width="47" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal" title=")">
@@ -441,7 +435,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="appendOperator:" destination="2" eventType="touchUpInside" id="aza-EV-vLK"/>
+                                    <action selector="STR:" destination="2" eventType="touchUpInside" id="f2G-AB-wmb"/>
                                     <action selector="clickDown:" destination="2" eventType="touchDown" id="dXG-gj-z5b"/>
                                     <action selector="clickUp:" destination="2" eventType="touchUpOutside" id="Njh-Hz-P6l"/>
                                     <action selector="clickUp:" destination="2" eventType="touchUpInside" id="o54-ng-hKO"/>
@@ -539,50 +533,6 @@
                                     <action selector="compute:" destination="2" eventType="touchUpInside" id="W2r-1v-MEg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yAH-b8-yGq" userLabel="Left">
-                                <rect key="frame" x="36" y="141" width="50" height="43"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="left">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="0.0" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="disabled">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
-                                </state>
-                                <state key="selected">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="clickDown:" destination="2" eventType="touchDown" id="Jyk-Rc-u0N"/>
-                                    <action selector="clickUp:" destination="2" eventType="touchUpOutside" id="6Gx-O0-5i2"/>
-                                    <action selector="clickUp:" destination="2" eventType="touchUpInside" id="zF9-7S-Ods"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="C9g-87-Zxq" userLabel="Right">
-                                <rect key="frame" x="106" y="140" width="47" height="43"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="right">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="0.0" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="disabled">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
-                                </state>
-                                <state key="selected">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="clickDown:" destination="2" eventType="touchDown" id="1L1-H4-XGS"/>
-                                    <action selector="clickUp:" destination="2" eventType="touchUpInside" id="Sa9-NP-UAe"/>
-                                    <action selector="clickUp:" destination="2" eventType="touchUpOutside" id="g86-OY-X8O"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -590,7 +540,6 @@
                     <connections>
                         <outlet property="option" destination="ujN-qj-y94" id="vF4-7Z-Zpg"/>
                         <outlet property="screen" destination="euO-GE-1so" id="5O9-Ok-qSA"/>
-                        <outlet property="timeDisplay" destination="jND-bS-tGG" id="sw8-Td-kCx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
@@ -605,6 +554,7 @@
         <class className="SEBViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SEBViewController.h"/>
             <relationships>
+                <relationship kind="action" name="STR:" candidateClass="UIButton"/>
                 <relationship kind="action" name="appendConstant:" candidateClass="UIButton"/>
                 <relationship kind="action" name="appendOperand:" candidateClass="UIButton"/>
                 <relationship kind="action" name="appendOperator:" candidateClass="UIButton"/>
@@ -616,7 +566,6 @@
                 <relationship kind="action" name="option:" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="option" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="screen" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="timeDisplay" candidateClass="UILabel"/>
             </relationships>
         </class>
     </classes>

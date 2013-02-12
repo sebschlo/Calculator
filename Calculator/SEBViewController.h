@@ -11,6 +11,4 @@
 
 @interface SEBViewController : UIViewController
 
-
-
 @end

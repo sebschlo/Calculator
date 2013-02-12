@@ -12,8 +12,9 @@
 @interface SEBViewController ()
 
 @property (weak, nonatomic) IBOutlet UITextField *screen;
-@property (weak, nonatomic) IBOutlet UILabel *timeDisplay;
 @property (weak, nonatomic) IBOutlet UILabel *option;
+
+@property NSDateFormatter *dateFormatter;
 
 @end
 
@@ -22,6 +23,8 @@
 // Initialize some variables
 Boolean *option = NO;
 SEBCalculatorModel *model;
+NSString *xValue = @"";
+
 
 - (void)viewDidLoad
 {
@@ -57,18 +60,13 @@ SEBCalculatorModel *model;
 - (IBAction)appendOperator:(UIButton *)sender
 {
     // Determine operator to be added
-    NSString *operator = @"";
+    NSString *operator = sender.currentTitle;
     if (option) {
         if ([sender.currentTitle isEqualToString:@"*"]) {
             operator = @"^";
         }
-        else if ([sender.currentTitle isEqualToString:@"/"]) {
-            operator = @"√";
-        }
         [self toggleOption];
-    } else {
-        operator = sender.currentTitle;
-    }
+    } 
     
     // Get the last character of the screen
     NSString *last = [self getLastChar:self.screen.text];
@@ -81,15 +79,19 @@ SEBCalculatorModel *model;
         if ([f numberFromString:last] != Nil) {
             self.screen.text = [self.screen.text stringByAppendingString:operator]; 
         }
+    } else if ([sender.currentTitle isEqualToString:@"-"]) {
+        if (![last isEqualToString:@"-"]) {
+            self.screen.text = [self.screen.text stringByAppendingString:operator];
+        }
     } else {
-        if ([f numberFromString:last] != Nil || [last isEqualToString:@"π"] || [last isEqualToString:@"e"]) {
+        if ([f numberFromString:last] != Nil || [last isEqualToString:@"π"] || [last isEqualToString:@"e"] || [last isEqualToString:@"X"]) {
             self.screen.text = [self.screen.text stringByAppendingString:operator];
         }
     }
 }
 
 
-// CONSTANT BUTTON (PI AND E) FUNCTIONALITY
+// CONSTANT BUTTON (PI AND E) and Variable X FUNCTIONALITY
 - (IBAction)appendConstant:(UIButton *)sender
 {
     // Determine operator to be added
@@ -103,7 +105,11 @@ SEBCalculatorModel *model;
             operator = @"π";
         }
     } else {
-        operator = @"(";
+        if (xValue != Nil) {
+            operator = @"X";
+        } else {
+            return;
+        }
     }
 
     
@@ -114,12 +120,24 @@ SEBCalculatorModel *model;
     NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
     
     // If last character is non-numeric, and not another constant add char
-    if (![last isEqualToString:@"e"] && ![last isEqualToString:@"("] && ![last isEqualToString:@"π"] && [f numberFromString:last] == Nil)
+    if (![last isEqualToString:@"e"] && ![last isEqualToString:@"X"] && ![last isEqualToString:@"π"] && [f numberFromString:last] == Nil)
     {
         self.screen.text = [self.screen.text stringByAppendingString:operator];
     }
 
 }
+
+- (IBAction)STR:(UIButton *)sender {
+    NSString *last = [self getLastChar:self.screen.text];
+    NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
+
+    if ([f numberFromString:last] != nil || [last isEqualToString:@"π"] || [last isEqualToString:@"e"] || [last isEqualToString:@"X"]) {
+
+        xValue = [model parse:[self.screen.text stringByReplacingOccurrencesOfString:@"X" withString:xValue]];
+        self.screen.text = @"X";
+    }
+}
+
 
 // INVERT BUTTON FUNCTIONALITY
 // only works when no operators are on the screen
@@ -161,12 +179,23 @@ SEBCalculatorModel *model;
 
 // ENTER BUTTON FUNCTIONALITY
 - (IBAction)compute:(UIButton *)sender {
-    self.screen.text = [model compute:self.screen.text];
+    NSString *last = [self getLastChar:self.screen.text];
+    NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
+
+    if ([f numberFromString:last] != nil || [last isEqualToString:@"π"] || [last isEqualToString:@"e"] || [last isEqualToString:@"X"]) {
+
+        self.screen.text = [model parse:[self.screen.text stringByReplacingOccurrencesOfString:@"X" withString:xValue]];
+    } 
 }
 
 // HELPER METHODS
+
 - (IBAction)clickDown:(UIButton *)sender
 {
+    //clear error
+    if ([sender.currentTitle isEqualToString:@"Error"]) {
+        self.screen.text = @"";
+    }
     [sender setBackgroundColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:.3]];
 }
 
