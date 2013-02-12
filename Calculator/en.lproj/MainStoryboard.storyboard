@@ -34,8 +34,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="NZo-DW-Fp7" userLabel="0">
-                                <rect key="frame" x="39" y="422" width="47" height="33"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="38" y="422" width="47" height="33"/>
                                 <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal" title="0">
                                     <color key="titleColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="0.0" colorSpace="calibratedRGB"/>
@@ -53,11 +52,12 @@
                                 <connections>
                                     <action selector="appendOperand:" destination="2" eventType="touchUpInside" id="l4K-h6-Woj"/>
                                     <action selector="clickDown:" destination="2" eventType="touchDown" id="Bg6-fa-Vuv"/>
+                                    <action selector="clickUp:" destination="2" eventType="touchUpOutside" id="RUr-DI-ZAs"/>
+                                    <action selector="clickUp:" destination="2" eventType="touchUpInside" id="u3f-AE-Dq0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9tf-P9-EVe" userLabel="1">
-                                <rect key="frame" x="39" y="371" width="47" height="33"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="38" y="372" width="47" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal" title="1">
                                     <color key="titleColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="0.0" colorSpace="calibratedRGB"/>
@@ -81,7 +81,6 @@
                             </button>
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xWg-F2-0TD" userLabel="2">
                                 <rect key="frame" x="104" y="371" width="47" height="33"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal" title="2">
                                     <color key="titleColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="0.0" colorSpace="calibratedRGB"/>
@@ -98,11 +97,13 @@
                                 </state>
                                 <connections>
                                     <action selector="appendOperand:" destination="2" eventType="touchUpInside" id="n63-PA-gUc"/>
+                                    <action selector="clickDown:" destination="2" eventType="touchDown" id="CfG-6V-HX0"/>
+                                    <action selector="clickUp:" destination="2" eventType="touchUpInside" id="M9F-d0-zxd"/>
+                                    <action selector="clickUp:" destination="2" eventType="touchUpOutside" id="rre-4m-hLW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7eb-2B-OHl" userLabel="3">
                                 <rect key="frame" x="173" y="371" width="47" height="33"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal" title="3">
                                     <color key="titleColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="0.0" colorSpace="calibratedRGB"/>
@@ -119,11 +120,13 @@
                                 </state>
                                 <connections>
                                     <action selector="appendOperand:" destination="2" eventType="touchUpInside" id="MaR-4s-n5S"/>
+                                    <action selector="clickDown:" destination="2" eventType="touchDown" id="rMZ-UN-fqa"/>
+                                    <action selector="clickUp:" destination="2" eventType="touchUpOutside" id="k5q-41-54J"/>
+                                    <action selector="clickUp:" destination="2" eventType="touchUpInside" id="sW0-hk-TRQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="drz-Wz-h1U" userLabel="4">
-                                <rect key="frame" x="39" y="317" width="47" height="33"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="38" y="317" width="47" height="33"/>
                                 <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal" title="4">
                                     <color key="titleColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="0.0" colorSpace="calibratedRGB"/>
@@ -140,11 +143,13 @@
                                 </state>
                                 <connections>
                                     <action selector="appendOperand:" destination="2" eventType="touchUpInside" id="fev-bs-zX6"/>
+                                    <action selector="clickDown:" destination="2" eventType="touchDown" id="YQf-mM-g5a"/>
+                                    <action selector="clickUp:" destination="2" eventType="touchUpOutside" id="he8-Nx-YWA"/>
+                                    <action selector="clickUp:" destination="2" eventType="touchUpInside" id="sAc-fu-hN6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3zY-MO-KFN" userLabel="5">
                                 <rect key="frame" x="104" y="317" width="47" height="33"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal" title="5">
                                     <color key="titleColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="0.0" colorSpace="calibratedRGB"/>
@@ -161,11 +166,13 @@
                                 </state>
                                 <connections>
                                     <action selector="appendOperand:" destination="2" eventType="touchUpInside" id="mCb-6c-XCU"/>
+                                    <action selector="clickDown:" destination="2" eventType="touchDown" id="a3b-hM-YeX"/>
+                                    <action selector="clickUp:" destination="2" eventType="touchUpInside" id="anH-MQ-tSb"/>
+                                    <action selector="clickUp:" destination="2" eventType="touchUpOutside" id="spZ-vq-UVb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="T8b-aD-6vX" userLabel="6">
                                 <rect key="frame" x="173" y="317" width="47" height="33"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal" title="6">
                                     <color key="titleColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="0.0" colorSpace="calibratedRGB"/>
@@ -182,11 +189,13 @@
                                 </state>
                                 <connections>
                                     <action selector="appendOperand:" destination="2" eventType="touchUpInside" id="nxb-xB-H1c"/>
+                                    <action selector="clickDown:" destination="2" eventType="touchDown" id="XuP-Cq-BoC"/>
+                                    <action selector="clickUp:" destination="2" eventType="touchUpOutside" id="eUG-OM-4qG"/>
+                                    <action selector="clickUp:" destination="2" eventType="touchUpInside" id="umB-bP-Bx8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fYb-Ya-p96" userLabel="7">
-                                <rect key="frame" x="39" y="266" width="47" height="33"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="38" y="266" width="47" height="33"/>
                                 <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal" title="7">
                                     <color key="titleColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="0.0" colorSpace="calibratedRGB"/>
@@ -203,11 +212,13 @@
                                 </state>
                                 <connections>
                                     <action selector="appendOperand:" destination="2" eventType="touchUpInside" id="m8f-OE-cge"/>
+                                    <action selector="clickDown:" destination="2" eventType="touchDown" id="272-w5-518"/>
+                                    <action selector="clickUp:" destination="2" eventType="touchUpOutside" id="L5H-WS-a7r"/>
+                                    <action selector="clickUp:" destination="2" eventType="touchUpInside" id="hfx-cV-7Qo"/>
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="VJM-Ly-SUq" userLabel="8">
-                                <rect key="frame" x="104" y="266" width="47" height="33"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="104" y="265" width="47" height="33"/>
                                 <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal" title="8">
                                     <color key="titleColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="0.0" colorSpace="calibratedRGB"/>
@@ -224,11 +235,13 @@
                                 </state>
                                 <connections>
                                     <action selector="appendOperand:" destination="2" eventType="touchUpInside" id="UEH-F7-tlZ"/>
+                                    <action selector="clickDown:" destination="2" eventType="touchDown" id="k82-Qc-tfs"/>
+                                    <action selector="clickUp:" destination="2" eventType="touchUpInside" id="8TL-fb-2r9"/>
+                                    <action selector="clickUp:" destination="2" eventType="touchUpOutside" id="CVY-pz-FCn"/>
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="DKZ-RT-yIk" userLabel="9">
                                 <rect key="frame" x="173" y="266" width="47" height="33"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal" title="9">
                                     <color key="titleColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="0.0" colorSpace="calibratedRGB"/>
@@ -245,11 +258,13 @@
                                 </state>
                                 <connections>
                                     <action selector="appendOperand:" destination="2" eventType="touchUpInside" id="0QG-Ch-hlV"/>
+                                    <action selector="clickDown:" destination="2" eventType="touchDown" id="vSf-en-SyO"/>
+                                    <action selector="clickUp:" destination="2" eventType="touchUpOutside" id="Zpd-Ot-XNf"/>
+                                    <action selector="clickUp:" destination="2" eventType="touchUpInside" id="vfK-in-5M3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xWW-Bm-J9x" userLabel="+">
                                 <rect key="frame" x="244" y="372" width="47" height="33"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal" title="+">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="0.0" colorSpace="calibratedRGB"/>
@@ -266,11 +281,13 @@
                                 </state>
                                 <connections>
                                     <action selector="appendOperator:" destination="2" eventType="touchUpInside" id="ifQ-T4-BYK"/>
+                                    <action selector="clickDown:" destination="2" eventType="touchDown" id="hVH-IW-ArR"/>
+                                    <action selector="clickUp:" destination="2" eventType="touchUpOutside" id="drt-AS-pf3"/>
+                                    <action selector="clickUp:" destination="2" eventType="touchUpInside" id="tNp-hM-iIV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9L7-Km-hhJ" userLabel="-">
                                 <rect key="frame" x="244" y="317" width="47" height="33"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal" title="-">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="0.0" colorSpace="calibratedRGB"/>
@@ -287,11 +304,13 @@
                                 </state>
                                 <connections>
                                     <action selector="appendOperator:" destination="2" eventType="touchUpInside" id="rZp-5X-crE"/>
+                                    <action selector="clickDown:" destination="2" eventType="touchDown" id="VFz-az-TeW"/>
+                                    <action selector="clickUp:" destination="2" eventType="touchUpOutside" id="0cY-B4-6u6"/>
+                                    <action selector="clickUp:" destination="2" eventType="touchUpInside" id="IbG-Fd-oUG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="J83-pL-QBU" userLabel="x">
                                 <rect key="frame" x="244" y="266" width="47" height="33"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal" title="*">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="0.0" colorSpace="calibratedRGB"/>
@@ -308,11 +327,13 @@
                                 </state>
                                 <connections>
                                     <action selector="appendOperator:" destination="2" eventType="touchUpInside" id="8ya-W8-2XX"/>
+                                    <action selector="clickDown:" destination="2" eventType="touchDown" id="EHF-Kz-ORE"/>
+                                    <action selector="clickUp:" destination="2" eventType="touchUpOutside" id="aT8-tR-edO"/>
+                                    <action selector="clickUp:" destination="2" eventType="touchUpInside" id="qn4-V5-s7V"/>
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="M9N-7M-p4g" userLabel="/">
-                                <rect key="frame" x="243" y="213" width="47" height="33"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="243" y="219" width="47" height="26"/>
                                 <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal" title="/">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="0.0" colorSpace="calibratedRGB"/>
@@ -329,11 +350,13 @@
                                 </state>
                                 <connections>
                                     <action selector="appendOperator:" destination="2" eventType="touchUpInside" id="qUJ-jN-AUw"/>
+                                    <action selector="clickDown:" destination="2" eventType="touchDown" id="NQm-vQ-OEL"/>
+                                    <action selector="clickUp:" destination="2" eventType="touchUpOutside" id="Lnz-rW-Nm5"/>
+                                    <action selector="clickUp:" destination="2" eventType="touchUpInside" id="RJm-L3-Ybb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pBz-4L-Fmo" userLabel=".">
                                 <rect key="frame" x="104" y="422" width="47" height="33"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal" title=".">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="0.0" colorSpace="calibratedRGB"/>
@@ -350,11 +373,13 @@
                                 </state>
                                 <connections>
                                     <action selector="appendOperator:" destination="2" eventType="touchUpInside" id="sCm-e7-5wT"/>
+                                    <action selector="clickDown:" destination="2" eventType="touchDown" id="DII-41-QP1"/>
+                                    <action selector="clickUp:" destination="2" eventType="touchUpInside" id="PyJ-MW-miy"/>
+                                    <action selector="clickUp:" destination="2" eventType="touchUpOutside" id="e5j-Ne-D2N"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MaD-fS-sDQ" userLabel="pi">
+                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MaD-fS-sDQ" userLabel="π">
                                 <rect key="frame" x="173" y="422" width="47" height="33"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal" title="π">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="0.0" colorSpace="calibratedRGB"/>
@@ -371,11 +396,13 @@
                                 </state>
                                 <connections>
                                     <action selector="appendConstant:" destination="2" eventType="touchUpInside" id="1JO-E5-zzr"/>
+                                    <action selector="clickDown:" destination="2" eventType="touchDown" id="Zhw-dJ-BsS"/>
+                                    <action selector="clickUp:" destination="2" eventType="touchUpOutside" id="PH3-ns-zHJ"/>
+                                    <action selector="clickUp:" destination="2" eventType="touchUpInside" id="tAg-ta-JPY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="oaS-ir-AIz" userLabel="(">
-                                <rect key="frame" x="104" y="213" width="47" height="33"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="104" y="215" width="47" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal" title="(">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="0.0" colorSpace="calibratedRGB"/>
@@ -391,12 +418,14 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="appendOperator:" destination="2" eventType="touchUpInside" id="0fW-lu-JSX"/>
+                                    <action selector="appendConstant:" destination="2" eventType="touchUpInside" id="vRe-Bw-tbz"/>
+                                    <action selector="clickDown:" destination="2" eventType="touchDown" id="bFM-1M-Pwv"/>
+                                    <action selector="clickUp:" destination="2" eventType="touchUpInside" id="EQB-Hd-eTi"/>
+                                    <action selector="clickUp:" destination="2" eventType="touchUpOutside" id="aEN-XP-zJP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="IXs-Zh-lDL" userLabel=")">
-                                <rect key="frame" x="173" y="213" width="47" height="33"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="173" y="215" width="47" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal" title=")">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="0.0" colorSpace="calibratedRGB"/>
@@ -412,12 +441,14 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="appendOperator:" destination="2" eventType="touchUpInside" id="g55-rQ-jw8"/>
+                                    <action selector="appendOperator:" destination="2" eventType="touchUpInside" id="aza-EV-vLK"/>
+                                    <action selector="clickDown:" destination="2" eventType="touchDown" id="dXG-gj-z5b"/>
+                                    <action selector="clickUp:" destination="2" eventType="touchUpOutside" id="Njh-Hz-P6l"/>
+                                    <action selector="clickUp:" destination="2" eventType="touchUpInside" id="o54-ng-hKO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="r1X-qV-Kuw" userLabel="option">
-                                <rect key="frame" x="175" y="146" width="47" height="33"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="175" y="149" width="47" height="28"/>
                                 <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal" title="alt">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="0.0" colorSpace="calibratedRGB"/>
@@ -433,12 +464,14 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="clickDown:" destination="2" eventType="touchDown" id="v1w-fc-B4W"/>
+                                    <action selector="clickUp:" destination="2" eventType="touchUpInside" id="XxI-0E-p9d"/>
+                                    <action selector="clickUp:" destination="2" eventType="touchUpOutside" id="lhi-g2-Nsm"/>
                                     <action selector="option:" destination="2" eventType="touchUpInside" id="qhm-zB-dd5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="aCs-fU-erK" userLabel="invert">
-                                <rect key="frame" x="39" y="213" width="47" height="33"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="39" y="215" width="47" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal" title="invert">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="0.0" colorSpace="calibratedRGB"/>
@@ -453,10 +486,15 @@
                                 <state key="highlighted">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="clickDown:" destination="2" eventType="touchDown" id="wRZ-rI-QIy"/>
+                                    <action selector="clickUp:" destination="2" eventType="touchUpOutside" id="8Is-aK-DX5"/>
+                                    <action selector="clickUp:" destination="2" eventType="touchUpInside" id="T1v-qR-1uY"/>
+                                    <action selector="invertNumber:" destination="2" eventType="touchUpInside" id="0g2-5Q-6Mb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dlD-iZ-hJ5" userLabel="Clear">
-                                <rect key="frame" x="242" y="146" width="47" height="33"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="242" y="149" width="47" height="28"/>
                                 <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal" title="clear">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="0.0" colorSpace="calibratedRGB"/>
@@ -473,11 +511,13 @@
                                 </state>
                                 <connections>
                                     <action selector="clear:" destination="2" eventType="touchUpInside" id="uEX-og-mgv"/>
+                                    <action selector="clickDown:" destination="2" eventType="touchDown" id="JBd-cM-akd"/>
+                                    <action selector="clickUp:" destination="2" eventType="touchUpOutside" id="8z9-nc-dWF"/>
+                                    <action selector="clickUp:" destination="2" eventType="touchUpInside" id="OGl-Mb-xpN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eHW-yK-bxs" userLabel="ENTER">
-                                <rect key="frame" x="243" y="427" width="47" height="33"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="243" y="427" width="47" height="28"/>
                                 <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal" title="enter">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="0.0" colorSpace="calibratedRGB"/>
@@ -492,10 +532,15 @@
                                 <state key="highlighted">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="clickDown:" destination="2" eventType="touchDown" id="6j9-Zw-saU"/>
+                                    <action selector="clickUp:" destination="2" eventType="touchUpOutside" id="57S-uw-UGT"/>
+                                    <action selector="clickUp:" destination="2" eventType="touchUpInside" id="GYI-6G-Chn"/>
+                                    <action selector="compute:" destination="2" eventType="touchUpInside" id="W2r-1v-MEg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yAH-b8-yGq" userLabel="Left">
                                 <rect key="frame" x="36" y="141" width="50" height="43"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="left">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="0.0" colorSpace="calibratedRGB"/>
@@ -510,10 +555,14 @@
                                 <state key="highlighted">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="clickDown:" destination="2" eventType="touchDown" id="Jyk-Rc-u0N"/>
+                                    <action selector="clickUp:" destination="2" eventType="touchUpOutside" id="6Gx-O0-5i2"/>
+                                    <action selector="clickUp:" destination="2" eventType="touchUpInside" id="zF9-7S-Ods"/>
+                                </connections>
                             </button>
                             <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="C9g-87-Zxq" userLabel="Right">
                                 <rect key="frame" x="106" y="140" width="47" height="43"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="right">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="0.0" colorSpace="calibratedRGB"/>
@@ -528,6 +577,11 @@
                                 <state key="highlighted">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="clickDown:" destination="2" eventType="touchDown" id="1L1-H4-XGS"/>
+                                    <action selector="clickUp:" destination="2" eventType="touchUpInside" id="Sa9-NP-UAe"/>
+                                    <action selector="clickUp:" destination="2" eventType="touchUpOutside" id="g86-OY-X8O"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -557,6 +611,8 @@
                 <relationship kind="action" name="clear:" candidateClass="UIButton"/>
                 <relationship kind="action" name="clickDown:" candidateClass="UIButton"/>
                 <relationship kind="action" name="clickUp:" candidateClass="UIButton"/>
+                <relationship kind="action" name="compute:" candidateClass="UIButton"/>
+                <relationship kind="action" name="invertNumber:" candidateClass="UIButton"/>
                 <relationship kind="action" name="option:" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="option" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="screen" candidateClass="UITextField"/>

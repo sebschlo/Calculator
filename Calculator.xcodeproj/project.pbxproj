@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9EA10A1C16C972B10060B8A1 /* SEBCalculatorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA10A1B16C972B10060B8A1 /* SEBCalculatorModel.m */; };
 		9EBDB9B116A86A0D0036CF1B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EBDB9B016A86A0D0036CF1B /* UIKit.framework */; };
 		9EBDB9B316A86A0D0036CF1B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EBDB9B216A86A0D0036CF1B /* Foundation.framework */; };
 		9EBDB9B516A86A0D0036CF1B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EBDB9B416A86A0D0036CF1B /* CoreGraphics.framework */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9EA10A1A16C972B10060B8A1 /* SEBCalculatorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEBCalculatorModel.h; sourceTree = "<group>"; };
+		9EA10A1B16C972B10060B8A1 /* SEBCalculatorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEBCalculatorModel.m; sourceTree = "<group>"; };
 		9EBDB9AC16A86A0D0036CF1B /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EBDB9B016A86A0D0036CF1B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9EBDB9B216A86A0D0036CF1B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -122,6 +125,8 @@
 			children = (
 				9EBDB9BF16A86A0D0036CF1B /* SEBAppDelegate.h */,
 				9EBDB9C016A86A0D0036CF1B /* SEBAppDelegate.m */,
+				9EA10A1A16C972B10060B8A1 /* SEBCalculatorModel.h */,
+				9EA10A1B16C972B10060B8A1 /* SEBCalculatorModel.m */,
 				9EBDB9C816A86A0D0036CF1B /* MainStoryboard.storyboard */,
 				9EBDB9CB16A86A0D0036CF1B /* SEBViewController.h */,
 				9EBDB9CC16A86A0D0036CF1B /* SEBViewController.m */,
@@ -278,6 +283,7 @@
 				9EBDB9BD16A86A0D0036CF1B /* main.m in Sources */,
 				9EBDB9C116A86A0D0036CF1B /* SEBAppDelegate.m in Sources */,
 				9EBDB9CD16A86A0D0036CF1B /* SEBViewController.m in Sources */,
+				9EA10A1C16C972B10060B8A1 /* SEBCalculatorModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
