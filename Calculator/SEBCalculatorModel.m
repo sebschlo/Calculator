@@ -130,8 +130,6 @@
         }
     }
 
-    [f setFormatterBehavior:NSNumberFormatterDecimalStyle];
-
     return [NSString stringWithFormat:@"%g", result];
 }
 

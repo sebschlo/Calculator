@@ -21,6 +21,13 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nFg-2n-Ypi">
+                                <rect key="frame" x="208" y="26" width="73" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" id="euO-GE-1so" userLabel="ScreenText">
                                 <rect key="frame" x="39" y="47" width="242" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -540,6 +547,7 @@
                     <connections>
                         <outlet property="option" destination="ujN-qj-y94" id="vF4-7Z-Zpg"/>
                         <outlet property="screen" destination="euO-GE-1so" id="5O9-Ok-qSA"/>
+                        <outlet property="timeDisplay" destination="nFg-2n-Ypi" id="3Cz-j2-dHE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
@@ -566,6 +574,7 @@
                 <relationship kind="action" name="option:" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="option" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="screen" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="timeDisplay" candidateClass="UILabel"/>
             </relationships>
         </class>
     </classes>

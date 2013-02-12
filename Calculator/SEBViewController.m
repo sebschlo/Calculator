@@ -13,8 +13,7 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *screen;
 @property (weak, nonatomic) IBOutlet UILabel *option;
-
-@property NSDateFormatter *dateFormatter;
+@property (weak, nonatomic) IBOutlet UILabel *timeDisplay;
 
 @end
 
@@ -30,6 +29,7 @@ NSString *xValue = @"";
 {
     [super viewDidLoad];
     model = [[SEBCalculatorModel alloc] init];
+    [self updateTime];
 }
 
 - (void)didReceiveMemoryWarning
@@ -105,7 +105,7 @@ NSString *xValue = @"";
             operator = @"π";
         }
     } else {
-        if (xValue != Nil) {
+        if (xValue != Nil && ![xValue isEqualToString:@""]) {
             operator = @"X";
         } else {
             return;
@@ -193,7 +193,7 @@ NSString *xValue = @"";
 - (IBAction)clickDown:(UIButton *)sender
 {
     //clear error
-    if ([sender.currentTitle isEqualToString:@"Error"]) {
+    if ([self.screen.text isEqualToString:@"Error"]) {
         self.screen.text = @"";
     }
     [sender setBackgroundColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:.3]];
@@ -225,4 +225,10 @@ NSString *xValue = @"";
     }
 }
 
+- (void)updateTime {
+    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+    [dateFormat setDateFormat:@"hh:mm"];
+    self.timeDisplay.text = [dateFormat stringFromDate:[NSDate date]];
+    [self performSelector:@selector(updateTime) withObject:self afterDelay:1.0];
+}
 @end
