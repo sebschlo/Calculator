@@ -9,25 +9,25 @@ Guide to use calculator app.
 
 Buttons:
 left arrow - decoration
+
 right arrow - decoration
+
 orange alt button - alt option
+
 clear - backspace, clears all when alt is selected
+
 +/- - if there is only one number on the screen, it will invert its sign
+
 X - variable x
+
 STR - computes whatever is on the screen and stores it as variable X
+
 pi - insert pi constant, e constant when alt is selected
+
 ENTER - compute expression on screen
 
+
 Everything else is self explanatory.
-
-
-
-
-
-
-
-
-
 
 
 INITIAL PLAN
