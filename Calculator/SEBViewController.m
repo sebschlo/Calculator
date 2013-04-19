@@ -167,7 +167,9 @@ NSString *xValue = @"";
         [self toggleOption];
     } else {
         // Otherwise clear last character
-        self.screen.text = [self.screen.text substringToIndex:[self.screen.text length] - 1];
+        if (self.screen.text.length >= 1) {
+            self.screen.text = [self.screen.text substringToIndex:[self.screen.text length] - 1];
+        }
     }
 }
 

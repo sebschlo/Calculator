@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E83BACD1721BCE200431EBA /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E83BACC1721BCE200431EBA /* background@2x.png */; };
+		9E83BAD01721BE8900431EBA /* appIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E83BACE1721BE8900431EBA /* appIcon.png */; };
+		9E83BAD11721BE8900431EBA /* appIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E83BACF1721BE8900431EBA /* appIcon@2x.png */; };
 		9EA10A1C16C972B10060B8A1 /* SEBCalculatorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA10A1B16C972B10060B8A1 /* SEBCalculatorModel.m */; };
 		9EBDB9B116A86A0D0036CF1B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EBDB9B016A86A0D0036CF1B /* UIKit.framework */; };
 		9EBDB9B316A86A0D0036CF1B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EBDB9B216A86A0D0036CF1B /* Foundation.framework */; };
@@ -38,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9E83BACC1721BCE200431EBA /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = SOURCE_ROOT; };
+		9E83BACE1721BE8900431EBA /* appIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appIcon.png; sourceTree = "<group>"; };
+		9E83BACF1721BE8900431EBA /* appIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "appIcon@2x.png"; sourceTree = "<group>"; };
 		9EA10A1A16C972B10060B8A1 /* SEBCalculatorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEBCalculatorModel.h; sourceTree = "<group>"; };
 		9EA10A1B16C972B10060B8A1 /* SEBCalculatorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEBCalculatorModel.m; sourceTree = "<group>"; };
 		9EBDB9AC16A86A0D0036CF1B /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,7 +98,10 @@
 		9EBDB9A116A86A0D0036CF1B = {
 			isa = PBXGroup;
 			children = (
+				9E83BACE1721BE8900431EBA /* appIcon.png */,
+				9E83BACF1721BE8900431EBA /* appIcon@2x.png */,
 				9EC4DAEF16C07C450084572C /* background.png */,
+				9E83BACC1721BCE200431EBA /* background@2x.png */,
 				9EBDB9B616A86A0D0036CF1B /* Calculator */,
 				9EBDB9DA16A86A0D0036CF1B /* CalculatorTests */,
 				9EBDB9AF16A86A0D0036CF1B /* Frameworks */,
@@ -246,6 +255,9 @@
 				9EBDB9C716A86A0D0036CF1B /* Default-568h@2x.png in Resources */,
 				9EBDB9CA16A86A0D0036CF1B /* MainStoryboard.storyboard in Resources */,
 				9EC4DAF016C07C450084572C /* background.png in Resources */,
+				9E83BACD1721BCE200431EBA /* background@2x.png in Resources */,
+				9E83BAD01721BE8900431EBA /* appIcon.png in Resources */,
+				9E83BAD11721BE8900431EBA /* appIcon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

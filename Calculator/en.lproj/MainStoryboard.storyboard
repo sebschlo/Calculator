@@ -558,26 +558,6 @@
     <resources>
         <image name="background.png" width="320" height="480"/>
     </resources>
-    <classes>
-        <class className="SEBViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SEBViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="STR:" candidateClass="UIButton"/>
-                <relationship kind="action" name="appendConstant:" candidateClass="UIButton"/>
-                <relationship kind="action" name="appendOperand:" candidateClass="UIButton"/>
-                <relationship kind="action" name="appendOperator:" candidateClass="UIButton"/>
-                <relationship kind="action" name="clear:" candidateClass="UIButton"/>
-                <relationship kind="action" name="clickDown:" candidateClass="UIButton"/>
-                <relationship kind="action" name="clickUp:" candidateClass="UIButton"/>
-                <relationship kind="action" name="compute:" candidateClass="UIButton"/>
-                <relationship kind="action" name="invertNumber:" candidateClass="UIButton"/>
-                <relationship kind="action" name="option:" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="option" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="screen" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="timeDisplay" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
